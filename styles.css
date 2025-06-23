@@ -2,16 +2,22 @@
   margin: 0;
   font-family: 'Figtree', 'Arial', 'sans-serif';
 }
+html {
+  font-size: 16px;
+}
 h1 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 900;
   margin: 10px 0;
 }
 h1:hover {
   color: hsl(0, 0%, 42%);
 }
+h2 {
+  font-size: 1rem;
+}
 .description {
-  font-size: 0.95em;
+  font-size: 0.95rem;
   color: hsl(0, 0%, 42%);
   margin-bottom: 15px;
 }
@@ -27,17 +33,17 @@ h1:hover {
   box-sizing: border-box;
   background-color: white;
   width: 50%;
-  max-width: 350px;
-  min-width: 250px;
+  max-width: 21rem;
+  min-width: 15.6rem;
   height: auto;
-  border: 1px solid black;
-  border-radius: 15px;
-  box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+  border: 0.06rem solid black;
+  border-radius: 0.95rem;
+  box-shadow: 0.625rem 0.625rem 0rem rgb(0, 0, 0);
   padding: 20px;
 }
 .main-image {
-  border-radius: 15px;
-  filter: blur(0.8px);
+  border-radius: 0.95rem;
+  filter: blur(0.08rem);
   transition: transform 0.5s, filter 0.5s;
 }
 .main-image:hover {
@@ -45,40 +51,40 @@ h1:hover {
   filter: blur(0px);
 }
 .btn {
-  margin: 15px 0 10px ;
-  padding: 3px 10px;
+  margin: 0.95rem 0 0.625rem ;
+  padding: 0.180rem 0.625rem;
   border: none;
   background-color: hsl(47, 88%, 63%);
   color: hsl(0, 0%, 7%);
   font-weight: 700;
-  border-radius: 3px;
+  border-radius: 0.180rem;
   transition: background-color 0.2s, border 0.3s, transform 0.5s;
 }
 .btn:hover {
   color: hsl(0, 0%, 100%);
   background-color: hsl(47, 96%, 30%);
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
 }
 .btn:active {
   color: hsl(0, 0%, 42%);
   background-color: hsl(46, 74%, 84%);
-  border: 2px solid rgba(0, 0, 0, 0.2)
+  border: 0.125rem solid rgba(0, 0, 0, 0.2)
 }
 .course-image {
-  border-radius: 15px;
+  border-radius: 0.95rem;
   width: 100%;
 }
 .avatar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .avatar:hover, h1:hover, .btn:hover {
   cursor: pointer;
 }
 .avatar-image {
-  max-width: 35px;
+  max-width: 2rem;
 }
 .date:hover, .description:hover {
   cursor: default;
