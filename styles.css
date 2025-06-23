@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  font-family: 'Figtree', 'Arial', 'sans-serif';
+}
+h1 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 10px 0;
+}
+h1:hover {
+  color: hsl(0, 0%, 42%);
+}
+.description {
+  font-size: 0.95em;
+  color: hsl(0, 0%, 42%);
+  margin-bottom: 15px;
+}
+.main {
+  background-color: hsl(47, 88%, 63%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  box-sizing: border-box;
+  background-color: white;
+  width: 50%;
+  max-width: 350px;
+  min-width: 250px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+  padding: 20px;
+}
+.main-image {
+  border-radius: 15px;
+  filter: blur(0.8px);
+  transition: transform 0.5s, filter 0.5s;
+}
+.main-image:hover {
+  transform: scale(1.02,1.02);
+  filter: blur(0px);
+}
+.btn {
+  margin: 15px 0 10px ;
+  padding: 3px 10px;
+  border: none;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  font-weight: 700;
+  border-radius: 3px;
+  transition: background-color 0.2s, border 0.3s, transform 0.5s;
+}
+.btn:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(47, 96%, 30%);
+  transform: translateY(-2px);
+}
+.btn:active {
+  color: hsl(0, 0%, 42%);
+  background-color: hsl(46, 74%, 84%);
+  border: 2px solid rgba(0, 0, 0, 0.2)
+}
+.course-image {
+  border-radius: 15px;
+  width: 100%;
+}
+.avatar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.avatar:hover, h1:hover, .btn:hover {
+  cursor: pointer;
+}
+.avatar-image {
+  max-width: 35px;
+}
+.date:hover, .description:hover {
+  cursor: default;
+}
